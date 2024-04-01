@@ -1,0 +1,42 @@
+.pagination {
+  /* float: right; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.dropDown select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 36px 8px 13px;
+  background-image: url("icons/dropdown.png");
+  background-repeat: no-repeat;
+  background-position: left 26px center;
+}
+
+/* Optional: Style the dropdown options */
+.dropDown select option {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+.pages p {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #969696;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}

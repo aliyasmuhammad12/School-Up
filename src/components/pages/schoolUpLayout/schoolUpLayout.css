@@ -1,0 +1,25 @@
+.Schoolup-sidebar-top h1 {
+  font-family: "Inter";
+  font-size: 21.02px;
+  font-weight: 500;
+  line-height: 31.53px;
+  letter-spacing: -0.022em;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.schoolup-layout-right-side {
+  margin-top: 0px;
+  margin-left: 302px;
+  min-height: 89%;
+  width: calc(100% - 302px);
+  border-top-left-radius: 40px;
+  background: #F6F8FF;
+  position: absolute;
+  top: 70px;
+}

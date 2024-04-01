@@ -1,0 +1,54 @@
+.schoolup-outer-div{
+    padding: 30px 30px 25px 30px;
+  }
+  .dashboard-top-boxes{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .dashboard-top-box{
+    box-shadow: 0px 20px 50px 0px #0000001A;
+    width: 277px;
+    
+  }
+  .dashboard-top-box .walking-boy{
+    width: 30px;
+    height: 30px;
+    background: #CFEEFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 5px 10px;
+  }
+  .dashboard-top-box .right-curve{
+    float: right;
+    width: 39px;
+    height: 39px;
+    background: #1890FF33;
+    border-radius: 0px 0px 0px 23.5px;
+    position: relative;
+  }
+  .dashboard-top-box .right-curve-inner{
+    float: right;
+    width: 31px;
+    height: 31px;
+    background: #1890FF66;
+    border-radius: 0px 0px 0px 23.5px;
+    position: relative;
+  }
+  .dashboard-top-box .box-text{
+    margin: 0px 0px 10px 10px;
+  }
+  .main-line-chart{
+    height: 280px;
+  }  
+  .line-chart{
+    padding: 15px 0px 0px 20px;
+    height: 333px;
+  }
+  .doughnut-chart-outer{
+    padding: 10px 27px;
+  }
+  .charts{
+    padding-bottom: 30px;
+  }

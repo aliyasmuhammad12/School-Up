@@ -1,0 +1,115 @@
+/* .sidebar-menu-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+} */
+
+/* .sidebar-icon-outer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #f6f6f6;
+  } */
+
+.sidebar-icon-outer svg {
+  width: 40px;
+}
+
+.sidebar-link-active .sidebar-icon-outer {
+}
+
+.sidebar-link-active .sidebar-icon-outer svg path {
+  stroke: #ffffff !important;
+}
+
+.sidebar-item-icon-label .sidebar-dropdown-label {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #9DA2A8;
+}
+
+.sidebar-link-active .sidebar-dropdown-label {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sidebar-dropdown-label-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sidebar-menu-item:hover svg path {
+  stroke: #ffffff;
+}
+
+.sidebar-menu-item:last-child {
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.sidebar-item-icon-label {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  margin-right: 30px;
+}
+
+.sidebar-item-icon-label:hover a {
+  color: #1890ff;
+}
+.sidebar-item-icon-label:hover .sidebar-icon-outer svg path {
+  color: #1890ff;
+}
+
+.sidebar-dropdown-links {
+  transform: translateY(10px);
+  display: flex;
+  flex-direction: column;
+  background: #f3f6f9;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+.sidebar-dropdown-links a {
+  padding: 10px 0 10px 10px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  color: #9DA2A8;
+  background: #f9f9f9;
+  text-align: left;
+}
+
+.sidebar-dropdown-links a:hover {
+  color: #1890ff;
+}
+
+.sidebar-dropdown-links a.sidebar-link-active-bg {
+  font-weight: 600;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #e5e5e582;
+  background: #eff7ff;
+  color: #1890ff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  text-align: left;
+}
+
+.sidebar-dropdown-menu:last-child {
+  margin-bottom: 50px;
+}
+.sidebar-dropdown-img-label {
+  max-height: 300px;
+}
