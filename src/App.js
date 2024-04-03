@@ -21,9 +21,9 @@ function App() {
       <Route path="/schoolup" element={<SchoolUpLayout/>}>
         <Route path="dashboard" element={<Dashboard/>}/>
         <Route path="revenue" element={<Revenue/>}/>
-        <Route path="allSubscriptions" element={<AllSubscriptions/>}/>
-        <Route path="activeSubsriptions" element={<ActiveSubscripition/>}/>
-        <Route path="expiredSubscriptions" element={<ExpiredSubscriptions/>}/>
+        <Route path="allsubscriptions" element={<AllSubscriptions/>}/>
+        <Route path="activesubscriptions" element={<ActiveSubscripition/>}/>
+        <Route path="expiredsubscriptions" element={<ExpiredSubscriptions/>}/>
         <Route path="schools" element={<Schools/>}/>
         <Route path="reveiws" element={<Reveiws/>}/>
         <Route path="setting" element={<Setting/>}/>

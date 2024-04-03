@@ -50,9 +50,9 @@ function SchoolUpLayout() {
             dropOptions={[
               {
                 title: "All Subscriptions",
-                link: "/schoolUp/allSubscriptions",
+                link: "/schoolup/allsubscriptions",
                 isActive: getActiveTab(location.pathname, [
-                  "/schoolUp/allSubscriptions",
+                  "/schoolup/allsubscriptions",
                 ]),
               },
               // {
@@ -64,23 +64,23 @@ function SchoolUpLayout() {
               // },
               {
                 title: "Active Subscriptions",
-                link: "/schoolup/activeSubsriptions",
+                link: "/schoolup/activesubscriptions",
                 isActive: getActiveTab(location.pathname, [
-                  "/schoolup/activeSubsriptions",
+                  "/schoolup/activesubscriptions",
                 ]),
               },
               {
                 title: "Expired Subscription",
-                link: "/schoolup/expiredSubscriptions",
+                link: "/schoolup/expiredsubscriptions",
                 isActive: getActiveTab(location.pathname, [
-                  "/schoolup/expiredSubscriptions",
+                  "/schoolup/expiredsubscriptions",
                 ]),
               },
             ]}
             isActive={getActiveTab(location.pathname, [
-              "/schoolUp/allSubscriptions",
-              "/schooolUp/activeSubsriptions",
-              "/schoolup/expiredSubscriptions",
+              "/schoolup/allSubscriptions",
+              "/schooolup/activesubsriptions",
+              "/schoolup/expiredsubscriptions",
             ])}
             setSideBarActive={setSideBarActive}
           />
