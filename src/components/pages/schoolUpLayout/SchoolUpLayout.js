@@ -55,13 +55,6 @@ function SchoolUpLayout() {
                   "/schoolup/allsubscriptions",
                 ]),
               },
-              // {
-              //   title: "Active Subscriptions",
-              //   link: "/schoolUp/activeSubsriptions",
-              //   isActive: getActiveTab(location.pathname, [
-              //     "/schooolUp/activeSubsriptions",
-              //   ]),
-              // },
               {
                 title: "Active Subscriptions",
                 link: "/schoolup/activesubscriptions",
@@ -78,8 +71,8 @@ function SchoolUpLayout() {
               },
             ]}
             isActive={getActiveTab(location.pathname, [
-              "/schoolup/allSubscriptions",
-              "/schooolup/activesubsriptions",
+              "/schoolup/allsubscriptions",
+              "/schoolup/activesubscriptions",
               "/schoolup/expiredsubscriptions",
             ])}
             setSideBarActive={setSideBarActive}
@@ -87,28 +80,28 @@ function SchoolUpLayout() {
           <SidebarSingleMenu
             link="/schoolup/schools"
             label="Schools"
-            icon={<Schools/>}
+            icon={<Schools />}
             isActive={getActiveTab(location.pathname, ["/schoolup/schools"])}
             setSideBarActive={setSideBarActive}
           />
           <SidebarSingleMenu
             link="/schoolup/reveiws"
             label="Reveiws"
-            icon={<Reveiws/>}
+            icon={<Reveiws />}
             isActive={getActiveTab(location.pathname, ["/schoolup/reveiws"])}
             setSideBarActive={setSideBarActive}
           />
           <SidebarSingleMenu
             link="/schoolup/setting"
             label="Setting"
-            icon={<Settings/>}
+            icon={<Settings />}
             isActive={getActiveTab(location.pathname, ["/schoolup/setting"])}
             setSideBarActive={setSideBarActive}
           />
           <SidebarSingleMenu
             link="/schoolup/blogs"
             label="Blogs"
-            icon={<Blogs/>}
+            icon={<Blogs />}
             isActive={getActiveTab(location.pathname, ["/schoolup/blogs"])}
             setSideBarActive={setSideBarActive}
           />

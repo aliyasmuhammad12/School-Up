@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Box from "../../styled/Box";
 import Heading from "../../styled/Typography/Heading";
 import Flex from "../../styled/Flex";
@@ -7,16 +7,6 @@ import boy from "./icons/image 52.png";
 import board from "./icons/image 53.png";
 import family from "./icons/image 54.png";
 import total from "./icons/image 55.png";
-import {
-  Chart as chartJS,
-  LineElement,
-  PointElement,
-  CategoryScale,
-  LinearScale,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Line, getElementsAtEvent } from "react-chartjs-2";
 import DoughnutChart from "../../doughnutChart/DoughnutChart";
 import {
   Table,
@@ -29,51 +19,18 @@ import {
 } from "../../styled/Table/Table";
 import { Link } from "react-router-dom";
 import Pagination from "../../pagination/Pagination";
+import LineChart from "../../lineChart/LineChart";
+// import { Line } from "recharts";
+import { LineChart as RechartsLineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import LineChartComponent from "../../lineChart/LineChart";
 
-chartJS.register(
-  LineElement,
-  PointElement,
-  CategoryScale,
-  LinearScale,
-  Tooltip,
-  Legend
-);
+
+
 
 function Dashboard() {
-  const data = {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
-    datasets: [
-      {
-        labels: "Monthely",
-        data: [20, 30, 40, 50],
-        borderColor: "#1890FF",
-        tension: 0.3,
-      },
-    ],
-  };
-  const options = {};
-  const chartRef = useRef();
-  const onClick = (event) => {
-    if (event) {
-      const elements = getElementsAtEvent(event);
-      console.log(elements, event);
-    } else {
-      console.log("Event object is undefined.");
-    }
-  };
+
+
+  
 
   return (
     <>
@@ -160,14 +117,8 @@ function Dashboard() {
             <Heading font="font-18" weight="weight-600" family="Poppins">
               Total Revenue
             </Heading>
-
-            <Box className="main-line-chart" width="802px">
-              <Line
-                data={data}
-                options={options}
-                onClick={onClick}
-                ref={chartRef}
-              />
+            <Box className="main-line-chart">
+            <LineChartComponent/>
             </Box>
           </Box>
           <Box

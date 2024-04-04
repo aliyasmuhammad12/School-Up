@@ -76,6 +76,7 @@
   flex-direction: column;
   background: #f3f6f9;
   margin-right: 30px;
+  border-radius: 5px;
   overflow: hidden;
 }
 

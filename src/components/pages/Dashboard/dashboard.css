@@ -39,15 +39,20 @@
   .dashboard-top-box .box-text{
     margin: 0px 0px 10px 10px;
   }
-  .main-line-chart{
+  /* .main-line-chart{
     height: 280px;
-  }  
+    width: 800px;
+    border: 1px solid red;
+  }   */
+  
   .line-chart{
     padding: 15px 0px 0px 20px;
     height: 333px;
+    border-radius: 12px;
   }
   .doughnut-chart-outer{
     padding: 10px 27px;
+    border-radius: 8px;
   }
   .charts{
     padding-bottom: 30px;

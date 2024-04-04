@@ -35,7 +35,7 @@ function DoughnutChart() {
                 <Flex direction='column' justify='center' gap='5' align='center'>
                   <Flex gap='1' align='center'>
                     <Box width='10px' background='#1890FF'  className='circle'></Box>
-                    <Text color='#929292' font='font-16' className='active' >Active</Text>
+                    <Text color='#929292' font='font-16' className='active-text' >Active</Text>
                   </Flex>
                     <Text font='font-18' className='numbers' >5000</Text>    
                 </Flex>
@@ -43,7 +43,7 @@ function DoughnutChart() {
                 <Flex direction='column' justify='center' gap='5' align='center'>
                   <Flex gap='1' align='center'>
                     <Box width='10px' background='#C193FE'  className='circle'></Box>
-                    <Text color='#929292' font='font-16' className='active'>Expired</Text>
+                    <Text color='#929292' font='font-16' className='active-text'>Expired</Text>
                   </Flex>
                     <Text font='font-18' className='numbers'>1000</Text>    
                 </Flex>
